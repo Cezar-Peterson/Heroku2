@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class MonumentoController {
     @GetMapping("/Monumento/monumento")
     public String monumento(){
-        return "monumento/monumento";
+        return "Monumento/monumento";
     }
 }
