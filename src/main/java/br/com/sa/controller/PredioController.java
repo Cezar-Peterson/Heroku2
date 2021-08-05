@@ -11,5 +11,18 @@ public class PredioController {
         return "predio/predio";
     }
 
+    @GetMapping("/predio/predio2")
+    public String predio2(){
+        return "predio/predio2";
+    }
 
+    @GetMapping("/predio/predio3")
+    public String predio3(){
+        return "predio/predio3";
+    }
+
+    @GetMapping("/predio/predios")
+    public String predios(){
+        return "predio/predios";
+    }
 }

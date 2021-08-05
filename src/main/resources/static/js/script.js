@@ -34,7 +34,7 @@ function scrollL(){
 }
 
 function predio(){
-    //window.scrollBy(0,-500)
+    
     document.getElementById("divCard").scrollTo({
         left:0,
         behavior:"smooth"
@@ -44,7 +44,7 @@ function predio(){
         document.getElementById("predio").classList.remove("view")
     }, 2000)
 
-    //window.scrollBy(0,-500)
+    
 }
 
 
@@ -70,10 +70,51 @@ function monumento(){
     }, 2000)
 }
 
-
-/*
-var now = new Date();
-function date(){
-document.getElementById("date").innerHTML = now.getDate()+"/"+now.getMonth()+"/"+now.getFullYear()
+function predio2(){
+    
+    document.getElementById("divCard").scrollTo({
+        left:820,
+        behavior:"smooth"
+    })
+    document.getElementById("predio2").classList.add("view")
+    setTimeout(function(){
+        document.getElementById("predio2").classList.remove("view")
+    }, 2000)
 }
-*/
+
+function predio3(){
+    
+    document.getElementById("divCard").scrollTo({
+        left:1230,
+        behavior:"smooth"
+    })
+    document.getElementById("predio3").classList.add("view")
+    setTimeout(function(){
+        document.getElementById("predio3").classList.remove("view")
+    }, 2000)
+}
+
+function parque(){
+    
+    document.getElementById("divCard").scrollTo({
+        left:1640,
+        behavior:"smooth"
+    })
+    document.getElementById("parque").classList.add("view")
+    setTimeout(function(){
+        document.getElementById("parque").classList.remove("view")
+    }, 2000)
+}
+
+function outros(){
+    
+    document.getElementById("divCard").scrollTo({
+        left:2050,
+        behavior:"smooth"
+    })
+    document.getElementById("outros").classList.add("view")
+    setTimeout(function(){
+        document.getElementById("outros").classList.remove("view")
+    }, 2000)
+}
+

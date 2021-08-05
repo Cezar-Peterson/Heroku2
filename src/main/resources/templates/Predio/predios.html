@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Semana de Arte</title>
+    <link rel="stylesheet" th:href="@{/bootstrap-5.0.0/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/css/scss.css}">
+</head>
+
+<body class="predio" th:style="'background: url(/img/pop2.jpg);'">
+
+
+
+<!--Navbar-->
+<center>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">S.A</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" th:href="@{/}">Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" th:href="@{/predio/predio}">Prédio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" th:href="@{/jardim/jardim}">Jardim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" th:href="@{/monumento/monumento}">Monumento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" th:href="@{/predio/predio2}">Torres Ligadas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" th:href="@{/predio/predio3}">Princess Towers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" th:href="@{/jardim/parque}">Parque</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" th:href="@{/predio/predios}">Outros prédios</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</center>
+
+
+<div class="div-s-Arte">
+    <h2>SEMANA DE ARTE - SENAI 2021</h2>
+</div>
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" aria-label="Slide 11"></button>
+        
+    </div>
+    <div id="Carrossel" class="carousel-inner">
+        <div class="carousel-item active">
+            <img th:src="@{/img/img3/1fora.jpeg}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img th:src="@{/img/img3/1outro.jpeg}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img th:src="@{/img/img3/1borda.jpeg}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img th:src="@{/img/img3/1dentroH.jpeg}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img th:src="@{/img/img3/1dentroH2.jpeg}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img th:src="@{/img/img3/1dentroH3.jpeg}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img th:src="@{/img/img3/1lateral.jpeg}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img th:src="@{/img/img3/1estrutura.jpeg}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img th:src="@{/img/img3/1salaElevador.jpeg}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img th:src="@{/img/img3/1peixes.jpeg}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img th:src="@{/img/img3/1macaco.jpeg}" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<div class="container text-predio">
+    <label >Nessa parte temos fotos de outros prédios presentes na cidade, porém sem uma história relevante para ganhar um descrição própria.
+    </label>
+</div>
+<footer class="final Pr-foo">
+    <div class="wrapper">
+        <div class="footer-box">
+            <div class="company-footer">
+                <h2>Equipe S.A</h2>
+                <p class="ff">Equipe composta por 7 participantes, sendo eles Cezar, Emanuelli, Emili, Gabriel (1º ano C), Kauan, Luana e Sofia.
+                    Onde a ideia principal é representar o pop art no minecraft por meio de uma cidade, com a ideia de trazer um monumento como referência desse estilo de arte, com a intenção de dar vida à própria cidade.</p>
+            </div>
+        </div>
+        <div class="footer-box">
+            <div class="articles-footer">
+                <h2 id="h2">Github</h2>
+                <ul class="footer-list footer-article-list">
+                    <li>
+                        <a style="text-decoration: none;" href="https://github.com/Cezar-Peterson">Cezar Peterson Campos</a>
+                        <br>
+                        <a style="text-decoration: none;" href="https://github.com/kuannzf">Kauan Zanella Fernandes</a>
+                        <br>
+                        <a style="text-decoration: none;" href="https://github.com/SofiaBenedet">Sofia Benedet Brandl</a>
+                        <br>
+                        <a style="text-decoration: none;" href="https://github.com/emilicosta">Emili Costa</a>
+                        <br>
+                        <a style="text-decoration: none;" href="https://github.com/LuanaFurini">Luana Furini</a>
+                        <br>
+                        <a style="text-decoration: none;" href="https://github.com/manuolivera">Emanuelli de Oliveira</a>
+                        <br>
+                        <a style="text-decoration: none;" href="https://github.com/LauraWolf">Laura Wolff</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--JS-->
+<script th:src="@{/js/jquery-3.6.0.min.js}"></script>
+<!--<script src="@{/js/popper.min.js}"></script>-->
+<script th:src="@{/bootstrap-5.0.0/js/bootstrap.min.js}"></script>
+
+
+
+
+</body>
+</html>

@@ -33,10 +33,14 @@
                   Cards
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a onclick="monumento()" class="dropdown-item" href="#tp">O monumento</a></li>
                   <li><a onclick="predio()" class="dropdown-item" href="#tp">O Prédio</a></li>
                   <li><a onclick="jardim()" class="dropdown-item" href="#tp">O jardim</a></li>
+                  <li><a onclick="predio2()" class="dropdown-item" href="#tp">Torres Ligadas</a></li>
+                  <li><a onclick="predio3()" class="dropdown-item" href="#tp">Princess Towers</a></li>
+                  <li><a onclick="parque()" class="dropdown-item" href="#tp">O Parque</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a onclick="monumento()" class="dropdown-item" href="#tp">O monumento</a></li>
+                  <li><a onclick="outros()" class="dropdown-item" href="#tp">Outros Prédios</a></li>
                 </ul>
               </li>
     
@@ -149,31 +153,41 @@
         </div>  
   
 
-        <div class="card" style="width: 18rem;">
-          <img th:src="@{/img/img2/fachada.jpeg}" class="card-img-top" alt="...">
+        <div class="card" id="predio2" style="width: 18rem;">
+          <img th:src="@{/img/img3/predio2.2.jpeg}" class="card-img-top" alt="...">
           <div id="oPredio2" class="card-body">
-            <h5 class="card-title">O Prédio</h5>
-            <a th:href="@{/predio/predio}"class="btn btn-primary">Conhecer mais</a>
+            <h5 class="card-title">Torres Ligadas</h5>
+            <a th:href="@{/predio/predio2}"class="btn btn-primary">Conhecer mais</a>
           </div>
         </div>
   
-        <div class="card card2" style="width: 18rem;">
-          <img th:src="@{/img/img2/JardimDiagonal.jpeg}" class="card-img-top" alt="...">
-          <div id="oJardim2" class="card-body">
-            <h5 class="card-title">O Jardim</h5>
+        <div class="card card2" id="predio3" style="width: 18rem;">
+          <img th:src="@{/img/img3/estrutura.jpeg}" class="card-img-top" alt="...">
+          <div id="oPredio3" class="card-body">
+            <h5 class="card-title">Princess Towers</h5>
             
-            <a th:href="@{/jardim/jardim}" class="btn btn-primary">Conhecer mais</a>
+            <a th:href="@{/predio/predio3}" class="btn btn-primary">Conhecer mais</a>
           </div>
         </div>
   
-        <div class="card card3" style="width: 18rem;">
-          <img th:src="@{/img/img2/monumentoNoiteD.jpeg}" class="card-img-top" alt="...">
+        <div class="card card3" id="parque" style="width: 18rem;">
+          <img th:src="@{/img/img3/bolo.jpeg}" class="card-img-top" alt="...">
           <div id="oMonumento2" class="card-body">
-            <h5 class="card-title">O monumento</h5>
+            <h5 class="card-title">O Parque</h5>
             
-            <a th:href="@{/monumento/monumento}" class="btn btn-primary">Conhecer mais</a>
+            <a th:href="@{/jardim/parque}" class="btn btn-primary">Conhecer mais</a>
           </div>
-        </div>  
+        </div>
+
+        <div class="card card2" id="outros" style="width: 18rem;">
+          <img th:src="@{/img/img3/1lateral.jpeg}" class="card-img-top" alt="...">
+          <div id="oPrediog" class="card-body">
+            <h5 class="card-title">Outros predios</h5>
+
+            <a th:href="@{/predio/predios}" class="btn btn-primary">Conhecer mais</a>
+          </div>
+        </div>
+
       </div>
 
       <!-- BUTTONS DIV_CARDS-->
@@ -248,7 +262,7 @@
                 <br>
                 <a style="text-decoration: none;" href="https://github.com/manuolivera">Emanuelli de Oliveira</a>
                   <br>
-                  <a style="text-decoration: none;" href="#">Laura Wolff</a>
+                  <a style="text-decoration: none;" href="https://github.com/LauraWolf">Laura Wolff</a>
                 <!--<span class="article-date">Sim</span> -->
                 </li>
               </ul>   

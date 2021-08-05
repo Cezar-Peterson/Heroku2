@@ -9,4 +9,8 @@ public class JardimController {
     public String jardim(){
         return "jardim/jardim";
     }
+    @GetMapping("/jardim/parque")
+    public String parque(){
+        return "jardim/parque";
+    }
 }
